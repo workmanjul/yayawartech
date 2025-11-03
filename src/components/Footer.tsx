@@ -1,3 +1,5 @@
+import logo from "@/assets/logo.png";
+
 const Footer = () => {
   return (
     <footer className="bg-secondary text-secondary-foreground py-12">
@@ -5,7 +7,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">YayawarTech</h3>
+            <img src={logo} alt="YayawarTech" className="h-10 mb-4 brightness-0 invert" />
             <p className="text-secondary-foreground/80 leading-relaxed">
               Your nomadic tech studio—wandering with purpose from idea to impact.
             </p>

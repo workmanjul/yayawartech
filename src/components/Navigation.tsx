@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -36,9 +37,9 @@ const Navigation = () => {
           {/* Logo */}
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="text-2xl font-bold hover:text-primary transition-colors"
+            className="hover:opacity-80 transition-opacity"
           >
-            YayawarTech
+            <img src={logo} alt="YayawarTech" className="h-8 md:h-10" />
           </button>
 
           {/* Desktop Navigation */}
