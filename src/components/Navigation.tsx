@@ -33,13 +33,13 @@ const Navigation = () => {
       }`}
     >
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-24 md:h-28">
           {/* Logo */}
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className="hover:opacity-80 transition-opacity"
           >
-            <img src={logo} alt="YayawarTech" className="h-12 md:h-16" />
+            <img src={logo} alt="YayawarTech" className="h-16 md:h-24" />
           </button>
 
           {/* Desktop Navigation */}
