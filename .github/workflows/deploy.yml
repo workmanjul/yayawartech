@@ -33,11 +33,8 @@ jobs:
 
       - name: Build
         run: npm run build
-        env:
-          # For root domain (username.github.io), leave VITE_BASE_PATH empty or unset
-          # For project site (username.github.io/repo-name), set your repo name:
-          # VITE_BASE_PATH: /${{ github.event.repository.name }}
-          # Or manually set: VITE_BASE_PATH: /your-repo-name
+        # For custom root domain (yayawartech.com), base path defaults to '/'
+        # For project site, uncomment and set: VITE_BASE_PATH: /${{ github.event.repository.name }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
