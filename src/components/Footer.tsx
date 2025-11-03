@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <img src={logo} alt="YayawarTech" className="h-10 mb-4 brightness-0 invert" />
+            <img src={logo} alt="YayawarTech" className="h-32 mb-4 brightness-0 invert" />
             <p className="text-secondary-foreground/80 leading-relaxed">
               Your nomadic tech studio—wandering with purpose from idea to impact.
             </p>
