@@ -33,8 +33,10 @@ jobs:
 
       - name: Build
         run: npm run build
-        # For custom root domain (yayawartech.com), base path defaults to '/'
-        # For project site, uncomment and set: VITE_BASE_PATH: /${{ github.event.repository.name }}
+        env:
+          # For project site: use repository name as base path
+          # For custom root domain (yayawartech.com), set VITE_BASE_PATH: /
+          VITE_BASE_PATH: /${{ github.event.repository.name }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
