@@ -39,7 +39,7 @@ const Navigation = () => {
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className="hover:opacity-80 transition-opacity"
           >
-            <img src={logo} alt="YayawarTech" className="h-8 md:h-10" />
+            <img src={logo} alt="YayawarTech" className="h-12 md:h-16" />
           </button>
 
           {/* Desktop Navigation */}
